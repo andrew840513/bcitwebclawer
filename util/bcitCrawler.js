@@ -3,7 +3,7 @@ const pupperteer = require('puppeteer');
 const BCIT_Crawler = (options) =>{
     return new Promise( (resolve, reject)=>{
         let {url} = options;
-        pupperteer.launch({headless: false}).then(async browser =>{
+        pupperteer.launch({headless: true,args: ['--no-sandbox', '--disable-setuid-sandbox']}).then(async browser =>{
             const page = await  browser.newPage();
             await page.setViewport({width:1200, height: 800});
             await page.goto(url);
