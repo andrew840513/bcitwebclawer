@@ -6,11 +6,14 @@ const CourseCrawler = require('../util/courseCraler');
 router.get('/', function(req, res, next) {
     res.setHeader('Content-Type', 'application/json');
     (async ()=>{
-        // let url  =req.query.url;
-        let url = 'https://www.bcit.ca/study/courses/comp3704';
-        let bcitPromise = await CourseCrawler({url});
-        res.end(JSON.stringify(await Promise.resolve(bcitPromise)));
-
+        let courses  =req.query.c;
+        let url = 'https://www.bcit.ca/study/courses/'+courses;
+        try{
+            let bcitPromise = await CourseCrawler({url});
+            res.end(JSON.stringify(await Promise.resolve(bcitPromise)))
+        }catch (e) {
+            res.end(JSON.stringify())
+        }
     })();
 });
 

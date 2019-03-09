@@ -13,32 +13,43 @@ const CourseCrawler = (options) => {
             await page.setViewport({width: 1200, height: 800});
             await page.goto(url);
             await page.waitFor(50)
-            await page.addScriptTag({ url: "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js" });
+            await page.addScriptTag({url: "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"});
             let getLink = await page.evaluate(() => {
                 const links = Array.from(document.querySelectorAll('#course_sections section.crse-term'));
-                const courseName = document.querySelector('#course_name');
-                let termsID = links.map(term => term.getAttribute('id'));
+                const courseName = document.querySelector('#course_name').textContent;
+                // let termsID = links.map(term => term.getAttribute('id'));
 
-                // let result = {}
-                // let index = 0;
-                //
-                // for(link of links){
-                //     var temp = []
-                //     for(crn of link.querySelectorAll('article.sctn h1 span')){
-                //         temp.push(crn.textContent);
-                //     }
-                //     result[termsID[index]] = {CRN:temp}
-                //     index++;
-                // }
-                //
-                // result['CourseName'] = courseName.textContent;
-                return _.map(links, (link)=>{
+                let ojb = _.map(links, (link) => {
+                    let term = link.getAttribute('id');
                     let crns = link.querySelectorAll('article.sctn h1 span');
-                    _.map(crns, (crn)=>{
-                        console.log(crn.textContent)
-                    })
-                    return {}
+                    let courseDetail = link.querySelectorAll('.sctn-meets tbody td');
+                    let instructor = link.querySelectorAll('.sctn-instructor p');
+                    let duration = link.querySelectorAll('.sctn-duration p span');
+                    let cost = link.querySelectorAll('.sctn-cost p');
+                    let courseDetailIndex = 0;
+                    let index = 0;
+
+                    let obj = {}
+                    obj[term]= {};
+                    _.map(crns, (crn) => {
+                        let tempObj = {
+                            'duration':duration[index].textContent,
+                            'date':courseDetail[courseDetailIndex].textContent,
+                            'day':courseDetail[1+courseDetailIndex].textContent,
+                            'time':courseDetail[2+courseDetailIndex].textContent,
+                            'location':courseDetail[3+courseDetailIndex].textContent.replace(/(\r\n|\n|\r)/gm, "")
+                                .replace(/( +)/gm, " ").trim(),
+                            'instructor':instructor[index].textContent,
+                            'cost':cost[index].textContent
+
+                        };
+                        courseDetailIndex+=4;
+                        index++;
+                        obj[term][crn.textContent]= tempObj
+                    });
+                    return obj
                 })
+                return {courseName, detail: ojb}
             });
             await page.close();
             await browser.close();
