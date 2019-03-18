@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
                 'userid': 'A00850536',
                 'pwd'   : 'Frank00567',
                 'term'  : '201920',
-                'crn'   : ['62904']
+                'crn'   : ['62904','63441']
             }
             let url = 'https://bss.bcit.ca/owa_prod/twbkwbis.P_WWWLogin?ret_code=E'
             let bcitPromise = await RegisterCrawler({url, data});

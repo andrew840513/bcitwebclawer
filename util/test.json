@@ -1,0 +1,145 @@
+[
+  {
+    "name": "SESSID",
+    "value": "MlJCM1Q2MTYyMzA3Mw==",
+    "domain": ".bcit.ca",
+    "path": "/",
+    "expires": -1,
+    "size": 26,
+    "httpOnly": false,
+    "secure": false,
+    "session": true
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.3.630865782.1552905332",
+    "domain": ".bss.bcit.ca",
+    "path": "/",
+    "expires": 1615977336,
+    "size": 29,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_hjIncludedInSample",
+    "value": "1",
+    "domain": "bss.bcit.ca",
+    "path": "/",
+    "expires": -1,
+    "size": 20,
+    "httpOnly": false,
+    "secure": false,
+    "session": true
+  },
+  {
+    "name": "_gat_UA-244235-23",
+    "value": "1",
+    "domain": ".bcit.ca",
+    "path": "/",
+    "expires": 1552905392,
+    "size": 18,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "LAD",
+    "value": "MTgtTUFSLTIwMTk=",
+    "domain": ".bcit.ca",
+    "path": "/",
+    "expires": -1,
+    "size": 19,
+    "httpOnly": false,
+    "secure": false,
+    "session": true
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.2.630865782.1552905332",
+    "domain": ".bcit.ca",
+    "path": "/",
+    "expires": 1615977336,
+    "size": 29,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.3.1739096616.1552905332",
+    "domain": ".bss.bcit.ca",
+    "path": "/",
+    "expires": 1552991736,
+    "size": 31,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_bcit_x",
+    "value": "!CB4hfF6nD9ps6Aa4LARGINO+txxgD3wZmkONG65vADc0+EQaD4nLOz7b2r4L7PIHzsp6ZM3/MnviCA==",
+    "domain": "bss.bcit.ca",
+    "path": "/",
+    "expires": -1,
+    "size": 88,
+    "httpOnly": true,
+    "secure": true,
+    "session": true
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.1.1552905336784.1264561279",
+    "domain": ".bcit.ca",
+    "path": "/",
+    "expires": 1560681336,
+    "size": 33,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.1739096616.1552905332",
+    "domain": ".bcit.ca",
+    "path": "/",
+    "expires": 1552991736,
+    "size": 31,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "refer",
+    "value": "https%3A//bss.bcit.ca/owa_prod/swsregs.p_foips",
+    "domain": "bss.bcit.ca",
+    "path": "/owa_prod",
+    "expires": 1552991736,
+    "size": 51,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.868550897.1552905337",
+    "domain": ".bcit.ca",
+    "path": "/",
+    "expires": 1560681336,
+    "size": 31,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+  },
+  {
+    "name": "TESTID",
+    "value": "set",
+    "domain": "bss.bcit.ca",
+    "path": "/owa_prod",
+    "expires": -1,
+    "size": 9,
+    "httpOnly": false,
+    "secure": false,
+    "session": true
+  }
+]
