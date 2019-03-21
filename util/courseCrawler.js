@@ -18,21 +18,23 @@ const CourseCrawler = (options) => {
                 const links = Array.from(document.querySelectorAll('#course_sections section.crse-term'));
                 const courseName = document.querySelector('#course_name').textContent;
                 // let termsID = links.map(term => term.getAttribute('id'));
-
-                let ojb = _.map(links, (link) => {
+                let ojb = []
+                 _.map(links, (link) => {
                     let term = link.getAttribute('id');
                     let crns = link.querySelectorAll('article.sctn h1 span');
                     let courseDetail = link.querySelectorAll('.sctn-meets tbody td');
                     let instructor = link.querySelectorAll('.sctn-instructor p');
                     let duration = link.querySelectorAll('.sctn-duration p span');
                     let cost = link.querySelectorAll('.sctn-cost p');
+                    let status = link.querySelectorAll('.sctn-status p.sctn-status-lbl')
                     let courseDetailIndex = 0;
                     let index = 0;
-
-                    let obj = {}
-                    obj[term]= {};
                     _.map(crns, (crn) => {
+
                         let tempObj = {
+                            courseName,
+                            term,
+                            'crn':crn.textContent,
                             'duration':duration[index].textContent,
                             'date':courseDetail[courseDetailIndex].textContent,
                             'day':courseDetail[1+courseDetailIndex].textContent,
@@ -40,16 +42,16 @@ const CourseCrawler = (options) => {
                             'location':courseDetail[3+courseDetailIndex].textContent.replace(/(\r\n|\n|\r)/gm, "")
                                 .replace(/( +)/gm, " ").trim(),
                             'instructor':instructor[index].textContent,
-                            'cost':cost[index].textContent
+                            'cost':cost[index].textContent,
+                            'status':(status[index] != undefined)? status[index].textContent : undefined
 
                         };
                         courseDetailIndex+=4;
                         index++;
-                        obj[term][crn.textContent]= tempObj
+                        ojb.push(tempObj)
                     });
-                    return obj
                 })
-                return {courseName, detail: ojb}
+                return ojb
             });
             await page.close();
             await browser.close();

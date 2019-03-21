@@ -3,10 +3,10 @@ const router = express.Router();
 const CourseCrawler = require('../util/courseCrawler');
 
 /* GET course page. */
-router.get('/', function(req, res, next) {
+router.get('/:courses', function(req, res, next) {
     res.setHeader('Content-Type', 'application/json');
     (async ()=>{
-        let courses  =req.query.c;
+        let {courses} = req.params
         let url = 'https://www.bcit.ca/study/courses/'+courses;
         try{
             let bcitPromise = await CourseCrawler({url});
