@@ -43,7 +43,7 @@ const CourseCrawler = (options) => {
                                 .replace(/( +)/gm, " ").trim(),
                             'instructor':instructor[index].textContent,
                             'cost':cost[index].textContent,
-                            'status':(status[index] != undefined)? status[index].textContent : undefined
+                            'status':(status[index] != undefined)? status[index].textContent : ""
 
                         };
                         courseDetailIndex+=4;

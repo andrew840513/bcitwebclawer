@@ -78,3 +78,4 @@ typings/
 .idea/vcs.xml
 .idea/workspace.xml
 bin/www
+.idea/

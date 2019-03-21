@@ -10,7 +10,7 @@ const BCIT_Crawler = (options) =>{
             let getLink = await page.evaluate(() => {
                 const links = Array.from(document.querySelectorAll('.col-main section li a'))
                 return {name: links.map(name => name.getAttribute('data-name')),
-                        link: links.map(link => link.href),
+                        link: links.map(link => link.href.substr(link.href.length-8,link.href.length)),
                         categorie: links.map( categorie => categorie.getAttribute("data-category"))}
             });
             let newBcitCourse = []
