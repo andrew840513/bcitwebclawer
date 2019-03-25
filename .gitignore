@@ -79,3 +79,5 @@ typings/
 .idea/workspace.xml
 bin/www
 .idea/
+.DS_Store
+.idea/workspace.xml

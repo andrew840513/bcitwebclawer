@@ -17,39 +17,45 @@ const CourseCrawler = (options) => {
             let getLink = await page.evaluate(() => {
                 const links = Array.from(document.querySelectorAll('#course_sections section.crse-term'));
                 const courseName = document.querySelector('#course_name').textContent;
-                // let termsID = links.map(term => term.getAttribute('id'));
+                let termsID = links.map(term => term.getAttribute('id'));
                 let ojb = []
-                 _.map(links, (link) => {
-                    let term = link.getAttribute('id');
-                    let crns = link.querySelectorAll('article.sctn h1 span');
-                    let courseDetail = link.querySelectorAll('.sctn-meets tbody td');
-                    let instructor = link.querySelectorAll('.sctn-instructor p');
-                    let duration = link.querySelectorAll('.sctn-duration p span');
-                    let cost = link.querySelectorAll('.sctn-cost p');
-                    let status = link.querySelectorAll('.sctn-status p.sctn-status-lbl')
-                    let courseDetailIndex = 0;
-                    let index = 0;
-                    _.map(crns, (crn) => {
-
+                _.map(links, (link) => {
+                    let sections = Array.from(link.querySelectorAll('.sctn'))
+                    _.map(sections,(section)=>{
+                        let term = link.getAttribute('id')
+                        let crn = section.querySelector('h1 span').textContent
+                        let instructor = section.querySelector('.sctn-instructor p').textContent
+                        let duration = section.querySelector('.sctn-duration p span').textContent
+                        let cost = section.querySelector('.sctn-cost p').textContent
+                        let status = (section.querySelector('.sctn-status p.sctn-status-lbl') != undefined) ? section.querySelector('.sctn-status p.sctn-status-lbl').textContent : ""
+                        let meets = Array.from(section.querySelectorAll('.sctn-meets table tbody tr'))
+                        let date = []
+                        let day = []
+                        let time = []
+                        let location = []
+                        _.map(meets,(meet)=>{
+                            let a  = Array.from(meet.querySelectorAll('td'))
+                            date.push(a[0].textContent)
+                            day.push(a[1].textContent)
+                            time.push(a[2].textContent)
+                            location.push(a[3].textContent.replace(/(\r\n|\n|\r)/gm, "")
+                                .replace(/( +)/gm, " ").trim())
+                        })
                         let tempObj = {
                             courseName,
                             term,
-                            'crn':crn.textContent,
-                            'duration':duration[index].textContent,
-                            'date':courseDetail[courseDetailIndex].textContent,
-                            'day':courseDetail[1+courseDetailIndex].textContent,
-                            'time':courseDetail[2+courseDetailIndex].textContent,
-                            'location':courseDetail[3+courseDetailIndex].textContent.replace(/(\r\n|\n|\r)/gm, "")
-                                .replace(/( +)/gm, " ").trim(),
-                            'instructor':instructor[index].textContent,
-                            'cost':cost[index].textContent,
-                            'status':(status[index] != undefined)? status[index].textContent : ""
-
-                        };
-                        courseDetailIndex+=4;
-                        index++;
+                            crn,
+                            duration,
+                            date,
+                            day,
+                            time,
+                            location,
+                            instructor,
+                            cost,
+                            status
+                        }
                         ojb.push(tempObj)
-                    });
+                    })
                 })
                 return ojb
             });
