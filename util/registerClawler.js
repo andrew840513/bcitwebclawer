@@ -104,6 +104,8 @@ const registerCrawler = (options) => {
                 console.log('View tuition: displayed')
                 getLink['status'] = "success"
                 console.log('end registration')
+                page.close()
+                browser.close()
                 resolve(getLink)
             } catch (e) {
                 console.log(e);
