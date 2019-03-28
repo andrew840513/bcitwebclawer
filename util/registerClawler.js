@@ -5,7 +5,7 @@ const registerCrawler = (options) => {
         let {url} = options;
         let {data} = options;
         pupperteer.launch({
-            headless: false,
+            headless: true,
             args: ['--no-sandbox', '--disable-setuid-sandbox'],
             dumpio: true
         }).then(async browser => {

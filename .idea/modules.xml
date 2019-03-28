@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BCIT_web_clawer.iml" filepath="$PROJECT_DIR$/.idea/BCIT_web_clawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bcitwebclawer.iml" filepath="$PROJECT_DIR$/.idea/bcitwebclawer.iml" />
     </modules>
   </component>
 </project>
