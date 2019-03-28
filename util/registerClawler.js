@@ -111,7 +111,7 @@ const registerCrawler = (options) => {
                 console.log(e);
                 resolve({
                     "status": "error",
-                    "message": e
+                    "error": e
                 })
             }
 
