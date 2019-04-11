@@ -12,7 +12,10 @@ router.get('/:courses', function(req, res, next) {
             let bcitPromise = await CourseCrawler({url});
             res.end(JSON.stringify(await Promise.resolve(bcitPromise)))
         }catch (e) {
-            res.end(JSON.stringify())
+            res.end(JSON.stringify({
+                "status": "error",
+                "error": e
+            }))
         }
     })();
 });

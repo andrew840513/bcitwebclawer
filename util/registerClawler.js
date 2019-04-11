@@ -5,7 +5,7 @@ const registerCrawler = (options) => {
         let {url} = options;
         let {data} = options;
         pupperteer.launch({
-            headless: true,
+            headless: false,
             args: ['--no-sandbox', '--disable-setuid-sandbox'],
             dumpio: true
         }).then(async browser => {
@@ -104,11 +104,13 @@ const registerCrawler = (options) => {
                 console.log('View tuition: displayed')
                 getLink['status'] = "success"
                 console.log('end registration')
-                page.close()
-                browser.close()
+                //page.close()
+                //browser.close()
                 resolve(getLink)
             } catch (e) {
                 console.log(e);
+                page.close()
+                browser.close()
                 resolve({
                     "status": "error",
                     "error": e

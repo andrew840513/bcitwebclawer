@@ -8,10 +8,18 @@ const BCIT_Crawler = require('../util/bcitCrawler');
 router.get('/', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json');
   (async ()=>{
-    let url = 'https://www.bcit.ca/study/courses/list?s%5B0%5D=';
-    let bcitPromise = await BCIT_Crawler({url});
+    try {
+      let url = 'https://www.bcit.ca/study/courses/list?s%5B0%5D=';
+      let bcitPromise = await BCIT_Crawler({url});
 
-    res.end(JSON.stringify(await Promise.all(bcitPromise)));
+      res.end(JSON.stringify(await Promise.all(bcitPromise)));
+    }catch (e) {
+      res.end(JSON.stringify({
+        "status": "error",
+        "error": e
+      }))
+    }
+
   })();
 });
 module.exports = router;
