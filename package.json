@@ -17,7 +17,8 @@
     "lodash": "^4.17.11",
     "morgan": "~1.9.0",
     "parse-url": "^5.0.1",
-    "puppeteer": "^1.13.0"
+    "puppeteer": "^1.13.0",
+    "uniqid": "^5.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
