@@ -76,8 +76,6 @@ typings/
 .fusebox/
 .idea/workspace.xml
 .idea/vcs.xml
-.idea/workspace.xml
 bin/www
 .idea/
 .DS_Store
-.idea/workspace.xml
