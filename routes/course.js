@@ -10,7 +10,7 @@ router.get('/:courses', function(req, res, next) {
         let url = 'https://www.bcit.ca/study/courses/'+courses;
         try{
             let bcitPromise = await CourseCrawler({url});
-            res.end(JSON.stringify(await Promise.resolve(bcitPromise)))
+            res.end(JSON.stringify(courseJ)) //await Promise.resolve(bcitPromise)
         }catch (e) {
             res.end(JSON.stringify({
                 "status": "error",

@@ -1,0 +1,538 @@
+[
+  {
+    "i": "abod",
+    "cat": "Automotive Collision Repair/Refinish Technician"
+  },
+  {
+    "i": "accg",
+    "cat": "Accounting"
+  },
+  {
+    "i": "aces",
+    "cat": "Access to Trades"
+  },
+  {
+    "i": "acim",
+    "cat": "AutomatedControls Instal&Maint"
+  },
+  {
+    "i": "acit",
+    "cat": "Computer Information Technology"
+  },
+  {
+    "i": "aico",
+    "cat": "Computer Aided Design & Engineering"
+  },
+  {
+    "i": "airc",
+    "cat": "Airport/Airline Core"
+  },
+  {
+    "i": "amrc",
+    "cat": "Area Manager Roads Civil"
+  },
+  {
+    "i": "apic",
+    "cat": "Production and Inventory Control"
+  },
+  {
+    "i": "asto",
+    "cat": "Auto Service Tech & Operations"
+  },
+  {
+    "i": "auas",
+    "cat": "Unmanned Aircraft Systems"
+  },
+  {
+    "i": "auto",
+    "cat": "Automotive Mechanics"
+  },
+  {
+    "i": "avia",
+    "cat": "Aviation"
+  },
+  {
+    "i": "bcst",
+    "cat": "Broadcast Communications"
+  },
+  {
+    "i": "bhsc",
+    "cat": "Basic Health Sciences"
+  },
+  {
+    "i": "biot",
+    "cat": "Biotechnology"
+  },
+  {
+    "i": "blaw",
+    "cat": "Business Law"
+  },
+  {
+    "i": "bldc",
+    "cat": "Building Construction"
+  },
+  {
+    "i": "bldg",
+    "cat": "Building"
+  },
+  {
+    "i": "bldt",
+    "cat": "Construction Operations/Supervision"
+  },
+  {
+    "i": "bmet",
+    "cat": "Biomedical Engineering"
+  },
+  {
+    "i": "bsci",
+    "cat": "Building Science"
+  },
+  {
+    "i": "bsys",
+    "cat": "Business Systems"
+  },
+  {
+    "i": "busa",
+    "cat": "Business Administration"
+  },
+  {
+    "i": "card",
+    "cat": "Cardiology/Cardiovascular"
+  },
+  {
+    "i": "carp",
+    "cat": "Carpentry"
+  },
+  {
+    "i": "cesa",
+    "cat": "Centre for Energy Systems Applications"
+  },
+  {
+    "i": "chem",
+    "cat": "Chemistry"
+  },
+  {
+    "i": "chsc",
+    "cat": "Chemical Sciences"
+  },
+  {
+    "i": "cint",
+    "cat": "Confucius Institute"
+  },
+  {
+    "i": "citx",
+    "cat": "Computer Information Technology Electronics"
+  },
+  {
+    "i": "civl",
+    "cat": "Civil Engineering"
+  },
+  {
+    "i": "clcr",
+    "cat": "Call Centre"
+  },
+  {
+    "i": "cmgt",
+    "cat": "Construction Management - CMGT"
+  },
+  {
+    "i": "cnst",
+    "cat": "Construction"
+  },
+  {
+    "i": "comm",
+    "cat": "Communication"
+  },
+  {
+    "i": "comp",
+    "cat": "Computer Systems"
+  },
+  {
+    "i": "ctmx",
+    "cat": "Commercial Transport"
+  },
+  {
+    "i": "drft",
+    "cat": "Drafting"
+  },
+  {
+    "i": "econ",
+    "cat": "Economics"
+  },
+  {
+    "i": "eeng",
+    "cat": "Environmental Engineering"
+  },
+  {
+    "i": "elex",
+    "cat": "Electrical and Computer Engineering"
+  },
+  {
+    "i": "enav",
+    "cat": "Simulated Electronic Navigation"
+  },
+  {
+    "i": "engl",
+    "cat": "English"
+  },
+  {
+    "i": "envh",
+    "cat": "Environmental Health"
+  },
+  {
+    "i": "fire",
+    "cat": "Fire Protection and Inspection"
+  },
+  {
+    "i": "fmgt",
+    "cat": "Financial Management"
+  },
+  {
+    "i": "fnam",
+    "cat": "Forest & Natural Areas Mgt"
+  },
+  {
+    "i": "food",
+    "cat": "Food Technology"
+  },
+  {
+    "i": "fpwr",
+    "cat": "Fluid Power"
+  },
+  {
+    "i": "fsct",
+    "cat": "Forensic Investigation"
+  },
+  {
+    "i": "fund",
+    "cat": "Fundraising"
+  },
+  {
+    "i": "geom",
+    "cat": "Geomatics"
+  },
+  {
+    "i": "gist",
+    "cat": "Geographic Information Systems"
+  },
+  {
+    "i": "gmds",
+    "cat": "GMDSS"
+  },
+  {
+    "i": "grow",
+    "cat": "Green Roofs"
+  },
+  {
+    "i": "hdmx",
+    "cat": "Heavy Duty Mechanics"
+  },
+  {
+    "i": "hled",
+    "cat": "Health Leadership"
+  },
+  {
+    "i": "hrmg",
+    "cat": "Human Resource Management"
+  },
+  {
+    "i": "hvac",
+    "cat": "Heating, Ventilation and  Air Conditioning"
+  },
+  {
+    "i": "intd",
+    "cat": "Interior Design"
+  },
+  {
+    "i": "intr",
+    "cat": "Residential Interiors"
+  },
+  {
+    "i": "isep",
+    "cat": "International Student Entry"
+  },
+  {
+    "i": "libs",
+    "cat": "Liberal Studies"
+  },
+  {
+    "i": "mach",
+    "cat": "Machinist"
+  },
+  {
+    "i": "math",
+    "cat": "Mathematics"
+  },
+  {
+    "i": "mcmx",
+    "cat": "Motorcycle Mechanic"
+  },
+  {
+    "i": "mdia",
+    "cat": "Media Communications"
+  },
+  {
+    "i": "mech",
+    "cat": "Mechanical Engineering"
+  },
+  {
+    "i": "medi",
+    "cat": "Marine Emergency Duties"
+  },
+  {
+    "i": "meoc",
+    "cat": "Marine Engineer Officer Cadet"
+  },
+  {
+    "i": "meop",
+    "cat": "Mobile Equipment Operator"
+  },
+  {
+    "i": "mers",
+    "cat": "Marine Engine Room Simulator"
+  },
+  {
+    "i": "mill",
+    "cat": "Millwright"
+  },
+  {
+    "i": "mimg",
+    "cat": "Medical Imaging"
+  },
+  {
+    "i": "mine",
+    "cat": "Mining"
+  },
+  {
+    "i": "mktg",
+    "cat": "Marketing Management"
+  },
+  {
+    "i": "mrad",
+    "cat": "Medical Radiography"
+  },
+  {
+    "i": "msec",
+    "cat": "Marine Security"
+  },
+  {
+    "i": "mssm",
+    "cat": "Marine Safety and Seamanship"
+  },
+  {
+    "i": "msys",
+    "cat": "Mechanical Systems"
+  },
+  {
+    "i": "mtec",
+    "cat": "Manufacturing"
+  },
+  {
+    "i": "naut",
+    "cat": "Ocean Navigation"
+  },
+  {
+    "i": "nmed",
+    "cat": "Nuclear Medicine"
+  },
+  {
+    "i": "nscc",
+    "cat": "Nursing Specialty Critical Care"
+  },
+  {
+    "i": "nser",
+    "cat": "Nursing Specialty Emergency"
+  },
+  {
+    "i": "nsha",
+    "cat": "Nursing Specialty High Acuity"
+  },
+  {
+    "i": "nsne",
+    "cat": "Nursing Specialty Neonatal"
+  },
+  {
+    "i": "nsnn",
+    "cat": "Nursing Specialty Nephrology"
+  },
+  {
+    "i": "nsoh",
+    "cat": "Nursing Specialty Occupational Health"
+  },
+  {
+    "i": "nspe",
+    "cat": "Nursing Specialty Pediatric"
+  },
+  {
+    "i": "nspn",
+    "cat": "Nursing Specialty Perinatal"
+  },
+  {
+    "i": "nspo",
+    "cat": "Nursing Specialty Perioperative"
+  },
+  {
+    "i": "nssc",
+    "cat": "Nursing Specialty"
+  },
+  {
+    "i": "ochs",
+    "cat": "Occupational Health and Safety"
+  },
+  {
+    "i": "offc",
+    "cat": "Office Skills Training"
+  },
+  {
+    "i": "opmt",
+    "cat": "Operations Management"
+  },
+  {
+    "i": "orgb",
+    "cat": "Organizational Behaviour"
+  },
+  {
+    "i": "pema",
+    "cat": "Maintenance Management"
+  },
+  {
+    "i": "pemx",
+    "cat": "Power Equipment Mechanic"
+  },
+  {
+    "i": "perf",
+    "cat": "Cardiovascular Perfusion"
+  },
+  {
+    "i": "phys",
+    "cat": "Physics"
+  },
+  {
+    "i": "powr",
+    "cat": "Power Engineering"
+  },
+  {
+    "i": "ppgs",
+    "cat": "Piping, Plumbing, Gas"
+  },
+  {
+    "i": "prks",
+    "cat": "Parks"
+  },
+  {
+    "i": "psyc",
+    "cat": "Psychology"
+  },
+  {
+    "i": "pubw",
+    "cat": "Public Works"
+  },
+  {
+    "i": "rail",
+    "cat": "Railway"
+  },
+  {
+    "i": "renr",
+    "cat": "Renewable Resources"
+  },
+  {
+    "i": "surv",
+    "cat": "Surveying"
+  },
+  {
+    "i": "sust",
+    "cat": "Sustainability"
+  },
+  {
+    "i": "tdmt",
+    "cat": "Transportation and Distribution"
+  },
+  {
+    "i": "telc",
+    "cat": "Electrical Trades"
+  },
+  {
+    "i": "tmgt",
+    "cat": "Technology Management"
+  },
+  {
+    "i": "trpt",
+    "cat": "Trades Pre-Entry Test"
+  },
+  {
+    "i": "tsyh",
+    "cat": "Transystems"
+  },
+  {
+    "i": "tted",
+    "cat": "Technology Teacher Education"
+  },
+  {
+    "i": "vent",
+    "cat": "Venture Development Centre"
+  },
+  {
+    "i": "weld",
+    "cat": "Welding"
+  },
+  {
+    "i": "Architectural and Structural CADD and Graphics ",
+    "cat": "Architectural and Structural CADD and Graphics "
+  },
+  {
+    "i": "avao",
+    "cat": "Airport Operations"
+  },
+  {
+    "i": "awpd",
+    "cat": "Advanced WordPress Development"
+  },
+  {
+    "i": "babi",
+    "cat": "Bus Analytics & Bus Intelligen"
+  },
+  {
+    "i": "bsch",
+    "cat": "Bachelor of Health Science"
+  },
+  {
+    "i": "fitt",
+    "cat": "Forum for International Trade Training"
+  },
+  {
+    "i": "hist",
+    "cat": "History"
+  },
+  {
+    "i": "infr",
+    "cat": "Municipal Infrastructure Management"
+  },
+  {
+    "i": "join",
+    "cat": "Joinery"
+  },
+  {
+    "i": "ndte",
+    "cat": "Nondestructive Testing "
+  },
+  {
+    "i": "npma",
+    "cat": "Non-profit Management"
+  },
+  {
+    "i": "rees",
+    "cat": "Renew Energy Elect Systems"
+  },
+  {
+    "i": "tour",
+    "cat": "Tourism"
+  },
+  {
+    "i": "asct",
+    "cat": "Architectural and Structural CADD and Graphics"
+  },
+  {
+    "i": "bsus",
+    "cat": "Sustainable Business"
+  }
+]
